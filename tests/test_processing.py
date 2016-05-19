@@ -10,7 +10,7 @@ Tests for `processing` module.
 
 import unittest
 
-from PyQt5.QtWidgets import QApplication
+from PyQt4.QtGui import QApplication
 
 from pymoskito.processing_gui import PostProcessor
 

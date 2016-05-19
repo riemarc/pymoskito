@@ -6,7 +6,7 @@ from abc import ABCMeta, abstractmethod
 from cPickle import dump
 
 import numpy as np
-from PyQt5.QtCore import QObject, pyqtWrapperType
+from PyQt4.QtCore import QObject, pyqtWrapperType
 
 from tools import get_sub_value
 

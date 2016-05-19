@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt5.QtWidgets import QApplication
+from PyQt4.QtGui import QApplication
 
 from model import CarModel
 from pymoskito import (Simulator, register_simulation_module, register_visualizer, Model)

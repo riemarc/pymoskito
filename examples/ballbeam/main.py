@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt5.QtWidgets import QApplication
+from PyQt4.QtGui import QApplication
 
 from control import FController
 from model import BallBeamModel

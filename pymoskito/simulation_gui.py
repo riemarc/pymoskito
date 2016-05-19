@@ -15,9 +15,9 @@ except:
 import numpy as np
 
 # Qt
-from PyQt5.QtCore import Qt, QTimer, pyqtSignal, QSize
-from PyQt5.QtGui import QIcon, QKeySequence
-from PyQt5.QtWidgets import (QWidget, QAction, QSlider, QDial, QMainWindow, QTreeView, QListWidget,
+from PyQt4.QtCore import Qt, QTimer, pyqtSignal, QSize
+from PyQt4.QtGui import QIcon, QKeySequence
+from PyQt4.QtGui import (QWidget, QAction, QSlider, QDial, QMainWindow, QTreeView, QListWidget,
                              QAbstractItemView, QToolBar, QStatusBar, QProgressBar, QLabel, QShortcut,
                              QLineEdit, QFileDialog, QInputDialog, QAbstractSlider, QFrame, QVBoxLayout)
 

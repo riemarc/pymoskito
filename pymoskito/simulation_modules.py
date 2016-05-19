@@ -4,7 +4,7 @@ import logging
 from abc import ABCMeta, abstractmethod, abstractproperty
 from collections import OrderedDict
 
-from PyQt5.QtCore import QObject, pyqtWrapperType
+from PyQt4.QtCore import QObject, pyqtWrapperType
 
 __author__ = 'stefan'
 

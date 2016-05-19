@@ -4,7 +4,7 @@ from __future__ import division
 import logging
 
 import numpy as np
-from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
+from PyQt4.QtCore import QObject, pyqtSignal, pyqtSlot
 
 from simulation_modules import SimulationException
 

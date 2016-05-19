@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication
+from PyQt4.QtGui import QApplication
 
 from pymoskito import Simulator, PostProcessor, \
     register_simulation_module, register_processing_module, register_visualizer, \

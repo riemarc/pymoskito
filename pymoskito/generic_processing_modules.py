@@ -2,8 +2,9 @@
 from __future__ import division
 
 import matplotlib as mpl
+mpl.use('Qt4Agg')
 import numpy as np
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D as Line
 

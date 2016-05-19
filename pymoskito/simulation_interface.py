@@ -7,9 +7,9 @@ import copy
 import logging
 import sys
 
-from PyQt5.QtCore import Qt, QObject, pyqtSignal, pyqtSlot, QModelIndex, QSize, QThread
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
-from PyQt5.QtWidgets import QItemDelegate, QComboBox, QTreeView
+from PyQt4.QtCore import Qt, QObject, pyqtSignal, pyqtSlot, QModelIndex, QSize, QThread
+from PyQt4.QtGui import QStandardItemModel, QStandardItem
+from PyQt4.QtGui import QItemDelegate, QComboBox, QTreeView
 
 import simulation_modules
 from generic_simulation_modules import *

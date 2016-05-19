@@ -10,7 +10,7 @@ import warnings
 
 import numpy as np
 import sympy as sp
-from PyQt5.QtWidgets import QPlainTextEdit
+from PyQt4.QtGui import QPlainTextEdit
 
 logger = logging.getLogger(__name__)
 

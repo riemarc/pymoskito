@@ -3,9 +3,9 @@ import cPickle
 import logging
 import os
 
-from PyQt5.QtCore import Qt, pyqtSignal, QSize
-from PyQt5.QtGui import QIcon, QKeySequence
-from PyQt5.QtWidgets import (QWidget, QAction, QMainWindow, QListWidget, QListWidgetItem,
+from PyQt4.QtCore import Qt, pyqtSignal, QSize
+from PyQt4.QtGui import QIcon, QKeySequence
+from PyQt4.QtGui import (QWidget, QAction, QMainWindow, QListWidget, QListWidgetItem,
                              QToolBar, QStatusBar, QLabel, QShortcut,
                              QFileDialog, QGridLayout, QSizePolicy)
 
