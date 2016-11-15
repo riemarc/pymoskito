@@ -1,5 +1,3 @@
-
-
 import logging
 import os
 from abc import ABCMeta, abstractmethod
@@ -106,26 +104,30 @@ class ProcessingModule(QObject, metaclass=ProcessingModuleMeta):
 
     def write_output_files(self, result_name, figure, output=None):
         """
-        this function exports the created diagram and saves calculation results in a POF
-        (processing output file) File.
+        this function exports the created diagram and saves calculation results
+        in a POF (processing output file) file.
+
         :param result_name:
         :param figure:
         :param output:
         :return:
         """
-        file_path = os.path.join(os.path.pardir, "results", "processing", self.name)
+        file_path = os.path.join("results",
+                                 "processing",
+                                 self.name)
         if not os.path.isdir(file_path):
             os.makedirs(file_path)
 
         file_name = os.path.join(file_path, result_name)
         if output:
-            with open(file_name + '.pof', 'w') as f:
-                dump(output, f)
+            with open(file_name + ".pof", "wb") as f:
+                dump(output, f, protocol=4)
 
         if figure:
             for export_format in self._export_formats:
                 figure.savefig(file_name + export_format, bbox_inches='tight')
-                # setting bbox_inches='tight' remove the white space around a saved image
+                # setting bbox_inches='tight' removes the white space around
+                # a saved image
 
 
 class PostProcessingModule(ProcessingModule):

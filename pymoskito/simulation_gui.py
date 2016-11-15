@@ -6,10 +6,7 @@ import time
 import os
 from operator import itemgetter
 import yaml
-try:
-    import pickle as pickle
-except:
-    import pickle
+import pickle
 
 import numpy as np
 
@@ -433,7 +430,7 @@ class SimulationGui(QMainWindow):
 
         self.currentDataset.update({"regime name": regime_name})
         with open(path, "wb") as f:
-            pickle.dump(self.currentDataset, f, protocol=2)
+            pickle.dump(self.currentDataset, f, protocol=4)
 
         self.statusLabel.setText("results saved to {}".format(path))
         self._logger.info("results saved to {}".format(path))
